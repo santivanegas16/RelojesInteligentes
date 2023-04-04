@@ -3,10 +3,14 @@
 .imgicono {width: 20px; height: 20px;}
 
 .logo{
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
   }
 
+ .bandera{
+  height: 35px;
+  width: 45px;
+ }
 
 /*------------------Index-----------------------*/
 /*------------------Carrito-----------------------*/
