@@ -1,0 +1,81 @@
+/*------------------General-----------------------*/
+body {
+    min-height: 100vh;
+}
+
+.logo {
+    width: 180px;
+   
+}
+
+@media screen and (max-width: 520px) {
+    .logo {
+        width: 120px;
+        height: 20px;
+    }
+}
+
+.imgicono {
+    width: 20px;
+    height: 20px;
+}
+
+.imgcarrito {
+    width: 30px;
+    height: 30px;
+}
+
+h1,h3,h4,h5 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+/*------------------Index-----------------------*/
+.bienvenida{
+    text-align: center;
+    margin-top: 80px;
+    
+}
+
+.bandera{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.contenido{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.imgproducto{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*------------------Catalogo-----------------------*/
+.contenedorCards{
+    margin-top: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgcard{
+    object-fit: contain;
+    height: 200px;
+}
+
+.cards{
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 332px) {
+    .imgcard
+    {
+        height: 200px;
+    } 
+}
