@@ -5,7 +5,7 @@ export const Relojes = [
         nombre: "Galaxy Watch5",
         descripcion: "Hola",
         Marca: "Samsung",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 4,
         precio: 260
     },
@@ -15,7 +15,7 @@ export const Relojes = [
         nombre: "Galaxy Watch5 Pro",
         descripcion: "Hola",
         Marca: "Samsung",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 17,
         precio: 365
     },
@@ -25,7 +25,7 @@ export const Relojes = [
         nombre: "Galaxy Watch4",
         descripcion: "Hola",
         Marca: "Samsung",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 9,
         precio: 194
     },
@@ -35,7 +35,7 @@ export const Relojes = [
         nombre: "Galaxy Fit2",
         descripcion: "Hola",
         Marca: "Samsung",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Band",
         cantidad: 5,
         precio: 40
     },
@@ -45,7 +45,7 @@ export const Relojes = [
         nombre: "Xiaomi Watch S1 Active",
         descripcion: "Hola",
         Marca: "Xiaomi",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 13,
         precio: 170
     },
@@ -55,7 +55,7 @@ export const Relojes = [
         nombre: "Redmi Watch 2 Lite",
         descripcion: "Hola",
         Marca: "Xiaomi",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 20,
         precio: 65
     },
@@ -65,7 +65,7 @@ export const Relojes = [
         nombre: "Xiaomi Smart Band 7",
         descripcion: "Hola",
         Marca: "Xiaomi",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Band",
         cantidad: 23,
         precio: 50
     },
@@ -75,7 +75,7 @@ export const Relojes = [
         nombre: "Xiaomi Watch S1",
         descripcion: "Hola",
         Marca: "Xiaomi",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 8,
         precio: 205
     },
@@ -85,7 +85,7 @@ export const Relojes = [
         nombre: "Apple Watch Series 8",
         descripcion: "Hola",
         Marca: "Apple",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 11,
         precio: 527
     },
@@ -95,7 +95,7 @@ export const Relojes = [
         nombre: "Apple Watch SE",
         descripcion: "Hola",
         Marca: "Apple",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 19,
         precio: 420
     },
@@ -105,7 +105,7 @@ export const Relojes = [
         nombre: "Apple Watch Ultra",
         descripcion: "Hola",
         Marca: "Apple",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 2,
         precio: 945
     },
@@ -115,7 +115,7 @@ export const Relojes = [
         nombre: "Amazfit GTR 4",
         descripcion: "Hola",
         Marca: "Amazfit",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 14,
         precio: 218
     },
@@ -125,7 +125,7 @@ export const Relojes = [
         nombre: "Forerunner 955",
         descripcion: "Hola",
         Marca: "Garmin",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 6,
         precio: 580
     },
@@ -135,7 +135,7 @@ export const Relojes = [
         nombre: "Polar Ignite 2",
         descripcion: "Hola",
         Marca: "Polar",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 12,
         precio: 342
     },
@@ -145,7 +145,7 @@ export const Relojes = [
         nombre: "Fitbit Sense 2",
         descripcion: "Hola",
         Marca: "Fitbit",
-        Tipo: "Analogo, Band, Watch",
+        Tipo: "Watch",
         cantidad: 10,
         precio: 273
     },]

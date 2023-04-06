@@ -39,9 +39,44 @@
         </div>
     </nav>
 
-    <div class="contenedorCards mb-5 px-5 text-center ">
-        <div id="cardsRelojes" class="row row-cols-1 row-cols-md-3 row-cols-sm-2  row-cols-lg-4 g-4">
+    <div class="contenedorFiltros mb-2  text-center ">
+        <label for="selectPrecio">Precio: </label>
+        <select name="precio" id="selectPrecio">
+            <option selected value="0">Seleccione una opcion</option>
+            <option value="1">Hasta 200 USD</option>
+            <option value="2">200 USD a 400 USD</option>
+            <option value="3">Más de 400 USD</option>
+        </select>
+
+        <label for="selectTipos">Tipo: </label>
+        <select name="Tipo" id="selectTipos">
+            <option selected value="0">Seleccione una opcion</option>
+        </select>
+
+        <label for="selectMarcas">Marca: </label>
+        <select name="Marcas" id="selectMarcas">
+            <option selected value="0">Seleccione una opcion</option>
+        </select>
+
+        <button onclick="FiltrarCatalogo()"  class="btn btn-outline-dark me-1" > Filtrar </button>
         
+
+    </div>
+
+    <div  class="mb-4  text-center ">
+        Ordenar por: 
+        <button onclick="OrdenarAscendente()"  class="btn btn-outline-dark me-1" > Menor Precio</button>
+        <button onclick="OrdenarDescendente()"  class="btn btn-outline-dark me-1" > Mayor Precio</button>
+    </div>
+
+
+    <div class="mb-5 px-5 text-center ">
+        <div id="mensaje">
+                        
+
+        </div>
+        <div id="cardsRelojes" class="row row-cols-1 row-cols-md-3 row-cols-sm-2  row-cols-lg-4 g-4">
+
         </div>
     </div>
 

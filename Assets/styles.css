@@ -57,9 +57,9 @@ h1,h3,h4,h5 {
 }
 
 /*------------------Catalogo-----------------------*/
-.contenedorCards{
+.contenedorFiltros{
     margin-top: 100px;
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -78,4 +78,8 @@ h1,h3,h4,h5 {
     {
         height: 200px;
     } 
+}
+
+select {
+    width: 200px;
 }
