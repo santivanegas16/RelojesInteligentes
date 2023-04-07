@@ -59,58 +59,38 @@ function RelojesPrecio(precio) {
 
 // Filtro solo por tipo
 function RelojesTipo(tipo) {
-  return Relojes.filter(b => b.Tipo == tipo)
+  let tipoReloj = Relojes.filter(b => b.Tipo == tipo)
+  if (tipoReloj.length != 0) {
+    return tipoReloj
+  } else {
+    return Relojes
+  }
 }
 
 // Filtro solo por marca
 function RelojesMarca(marca) {
-  return Relojes.filter(b => b.Marca == marca)
+  let marcaReloj = Relojes.filter(b => b.Marca == marca)
+  if (marcaReloj.length != 0) {
+    return marcaReloj
+  } else {
+    return Relojes
+  }
 }
 
-//Se crea la funcion global para filtrar todo el catalogo y combinar filtros
 window.FiltrarCatalogo = function () {
   let precioSeleccionado = document.getElementById("selectPrecio").value
   let tipoSeleccionado = document.getElementById("selectTipos").value
   let marcaSeleccionada = document.getElementById("selectMarcas").value
 
-  let precio = []
-  let tipo = []
-  let marca = []
-
-  if (precioSeleccionado) {
-    precio = RelojesPrecio(precioSeleccionado)
-    console.log(precio);
-
-  }
-  if (tipoSeleccionado) {
-    tipo = RelojesTipo(tipoSeleccionado)
-    if (tipo.length != 0) {
-      console.log(tipo)
-
-    } else {
-      tipo = Relojes
-      console.log(tipo)
-
-    }
-
-  }
-  if (marcaSeleccionada) {
-    marca = RelojesMarca(marcaSeleccionada)
-    if (marca.length != 0) {
-      console.log(marca)
-
-    } else {
-      marca = Relojes
-      console.log(marca)
-
-    }
-  }
+  let precio = RelojesPrecio(precioSeleccionado)
+  let tipo = RelojesTipo(tipoSeleccionado)
+  let marca = RelojesMarca(marcaSeleccionada)
 
   //Se crea un nuevo array con los elementos comunes de los 3 arrays de los filtros
   const arrayFiltrado = precio.filter((element) => tipo.includes(element) && marca.includes(element));
+  console.log(arrayFiltrado)
 
-
-  //Se crean las cards de los productos filtrados
+  // Se crean las cards de los productos filtrados
   if (arrayFiltrado.length != 0) {
     document.getElementById("cardsRelojes").innerHTML = ""
     document.getElementById("mensaje").innerHTML = ""
@@ -150,7 +130,6 @@ window.FiltrarCatalogo = function () {
 
 }
 
-
 //Se crean funciones para ordenar ascendente y descentente
 window.OrdenarAscendente1 = function (objeto) {
   return objeto.sort((a, b) => a.precio - b.precio)
@@ -162,7 +141,6 @@ window.OrdenarDescendente1 = function (objeto) {
 
 //Se crean funciones para ordenar y crear tarjetas estado inicial
 window.OrdenarAscendente = function () {
-
   let ord1 = OrdenarAscendente1(Relojes)
   document.getElementById("cardsRelojes").innerHTML = "";
   document.getElementById("mensaje").innerHTML = "";
@@ -173,7 +151,6 @@ window.OrdenarAscendente = function () {
 }
 
 window.OrdenarDescendente = function () {
-
   let ord2 = OrdenarDescendente1(Relojes)
   document.getElementById("cardsRelojes").innerHTML = "";
   document.getElementById("mensaje").innerHTML = "";
