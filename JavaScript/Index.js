@@ -1,6 +1,8 @@
 // ------------------ Usando ipapi ---------------------
 
 // Obtener la dirección IP del usuario
+
+
 fetch('https://api.ipify.org?format=json')
     .then(response => response.json())
     .then(data => {
@@ -11,7 +13,11 @@ fetch('https://api.ipify.org?format=json')
             .then(data => {
                 const ubicacion = `${data.city}, ${data.region}, ${data.country}`;
                 // Mostrar la bandera del país
-                const banderaUrl = `https://flagsapi.com/${data.country}/flat/64.png`;
+                // const banderaUrl = `https://flagsapi.com/c/flat/64.png`;
+                const banderaUrl = `https://www.countryflagicons.com/SHINY/64/${data.country}.png`;
+                // const country = data.country.toLowerCase();
+                // const banderaUrl = `https://flagcdn.com/48x36/${country}.png`;
+                
                 document.getElementById('bandera').src = banderaUrl;
             });
     });
@@ -37,3 +43,19 @@ fetch('https://api.ipify.org?format=json')
 //     });
 
 
+let carrito = JSON.parse(localStorage.getItem("carrito"));
+
+const contadorCarrito = document.getElementById("contadorCarrito")
+
+const contador = () =>{
+    if (carrito.length == 0 ) {
+        contadorCarrito.style.display = "none";
+      } else{
+        contadorCarrito.style.display = "block";
+        contadorCarrito.innerText = carrito.length;
+      }
+}
+
+window.addEventListener("load", () => {
+  contador();
+});

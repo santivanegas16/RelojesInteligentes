@@ -81,7 +81,7 @@ export const Relojes = [
     },
     {
         id_reloj: 9,
-        imagen: "https://lh3.googleusercontent.com/JvapcYthUihd5g9DNac34rePqeZY4MzXzMwC79GgF3TF1u8heezyK9jSk5-Jia-vyzuwwgFb6UGQKFDd2QqlGFXuRLXwWWR887_NKBCX",
+        imagen: "https://cdn.shopify.com/s/files/1/0604/8373/1606/products/IMG-7324573_360x.jpg?v=1663181132",
         nombre: "Apple Watch Series 8",
         descripcion: "Hola",
         Marca: "Apple",
@@ -91,7 +91,7 @@ export const Relojes = [
     },
     {
         id_reloj: 10,
-        imagen: "https://lh3.googleusercontent.com/lygUIl4LI5r-MdX_datCRvt7hV8Gu-qDQHsah9pNQiI_BYTuzrB5GD_kS4xGxkHZeUFEc6h3lFjhZoIfG-ldpgxHQY_tYI46NuPIlQ7R",
+        imagen: "https://cdn.shopify.com/s/files/1/0604/8373/1606/products/IMG-7324340_ff794088-15aa-4cd0-a08d-8764dc93f6a0_360x.jpg?v=1678800302",
         nombre: "Apple Watch SE",
         descripcion: "Hola",
         Marca: "Apple",
@@ -101,7 +101,7 @@ export const Relojes = [
     },
     {
         id_reloj: 11,
-        imagen: "https://lh3.googleusercontent.com/v1RvacVtk9Sj2m7J77g49O3UOftnWg7NZRE83tlaKT2JSA-BcDWQrxrkpB84JgFrSw4zpv8YkRFTVqjKyEi0RBVXy0x2ffD5WZqei7c",
+        imagen: "https://cdn.shopify.com/s/files/1/0604/8373/1606/products/IMG-7324826_58682c91-89c1-409c-b0a7-9bbd63b14dc1_360x.jpg?v=1663181151",
         nombre: "Apple Watch Ultra",
         descripcion: "Hola",
         Marca: "Apple",

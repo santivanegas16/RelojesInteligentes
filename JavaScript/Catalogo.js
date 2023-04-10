@@ -19,6 +19,7 @@ function crearTarjeta(objeto) {
       </div>
         `
   return div
+  
 }
 
 for (let i = 0; i < Relojes.length; i++) {
@@ -159,3 +160,67 @@ window.OrdenarDescendente = function () {
     document.querySelector('#cardsRelojes').appendChild(div)
   }
 }
+
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+
+window.click_here = function (buttonId) {
+
+  let infoReloj = Relojes.find(b => b.id_reloj == buttonId)
+
+  let productoExistente = carrito.find(p => p.id_reloj == infoReloj.id_reloj)
+
+  if (productoExistente) {
+    carrito.map(p => {
+      if (p.id_reloj == infoReloj.id_reloj) {
+        p.cantidad++
+      }
+    })
+  } else {
+    carrito.push({
+      id_reloj: infoReloj.id_reloj,
+      imagen: infoReloj.imagen,
+      nombre: infoReloj.nombre,
+      Marca: infoReloj.Marca,
+      Tipo: infoReloj.Tipo,
+      precio: infoReloj.precio,
+      cantidad: 1    
+    })
+
+  }
+
+  // actualizarContador()
+  contador()
+  localStorage.setItem('carrito', JSON.stringify(carrito));
+  console.log(carrito)
+
+}
+
+
+// const actualizarContador = () => {
+//   const contadorCarrito = document.getElementById("contadorCarrito")
+//   const carrito = JSON.parse(localStorage.getItem("carrito")) || []
+//   contadorCarrito.innerText = carrito.length;
+//   contadorCarrito.style.display = carrito.length > 0 ? "block" : "none";
+// }
+
+// window.addEventListener("load", () => {
+//   actualizarContador();
+// });
+
+
+const contadorCarrito = document.getElementById("contadorCarrito")
+
+const contador = () =>{
+  if (carrito.length == 0 ) {
+    contadorCarrito.style.display = "none";
+  } else{
+    contadorCarrito.style.display = "block";
+    contadorCarrito.innerText = carrito.length;
+  }
+    
+}
+
+window.addEventListener("load", () => {
+  contador();
+});
