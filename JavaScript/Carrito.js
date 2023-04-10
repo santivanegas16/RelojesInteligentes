@@ -64,9 +64,6 @@ window.eliminarProducto = function (eliminarID) {
     
 }
 
-
-
-
 const contadorCarrito = document.getElementById("contadorCarrito")
 
 const contador = () =>{
