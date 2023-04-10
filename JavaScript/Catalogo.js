@@ -189,24 +189,11 @@ window.click_here = function (buttonId) {
 
   }
 
-  // actualizarContador()
   contador()
   localStorage.setItem('carrito', JSON.stringify(carrito));
   console.log(carrito)
 
 }
-
-
-// const actualizarContador = () => {
-//   const contadorCarrito = document.getElementById("contadorCarrito")
-//   const carrito = JSON.parse(localStorage.getItem("carrito")) || []
-//   contadorCarrito.innerText = carrito.length;
-//   contadorCarrito.style.display = carrito.length > 0 ? "block" : "none";
-// }
-
-// window.addEventListener("load", () => {
-//   actualizarContador();
-// });
 
 
 const contadorCarrito = document.getElementById("contadorCarrito")
